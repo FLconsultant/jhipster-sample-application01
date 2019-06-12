@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="measure">
+            <h2><span>Measure</span> {{measure.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Measuresource</span></dt>
+                <dd>
+                    <span>{{measure.measuresource}}</span>
+                </dd>
+                <dt><span>Measurevalue</span></dt>
+                <dd>
+                    <span>{{measure.measurevalue}}</span>
+                </dd>
+                <dt><span>Measurevaluelong</span></dt>
+                <dd>
+                    <span>{{measure.measurevaluelong}}</span>
+                </dd>
+                <dt><span>Measuredate</span></dt>
+                <dd>
+                    <span>{{measure.measuredate}}</span>
+                </dd>
+                <dt><span>Measuredatetime</span></dt>
+                <dd>
+                    <span>{{measure.measuredatetime}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/measure', measure.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

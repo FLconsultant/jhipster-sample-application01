@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "measuresource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "measurevalue",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "measurevaluelong",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "measuredate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "measuredatetime",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20190612170401",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "measure",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll"
+}
