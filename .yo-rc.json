@@ -34,7 +34,9 @@
     "clientTheme": "none",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "otherModules": []
+    "otherModules": [],
+    "herokuAppName": "jhipster-sample-application-01",
+    "herokuDeployType": "git"
   },
   "git-provider": "GitHub",
   "git-company": "FLconsultant",
